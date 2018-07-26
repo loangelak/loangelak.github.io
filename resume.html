@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <title>Angela Lo</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' href='resume.css'>
+    </head>
+    
+    <body itemscope itemtype='http://schema.org/Person'>
+        <script>
+            window.onload = function(){
+                var toggleFloatingMenu = function(){
+                    $('.js-floating-nav').toggleClass('is-visible'); 
+                    $('.js-floating-nav-trigger').toggleClass('is-open'); 
+                }; 
+                $('.background-card').css('min-height', window.screen.availHeight + "px"); 
+                $("[rel=tooltip]").tooltip(); 
+                $('.js-floating-nav-trigger').on('click', function(e){
+                    e.preventDefault(); 
+                    toggleFloatingMenu(); 
+                });
+                $('.js-floating-nav a').on('click', toggleFloatingMenu); 
+            }
+        </script>
+        <div class='container-fluid'>
+            <div class='row main clearfix'>
+                <a href='#' class='js-floating-nav-trigger floating-nav-trigger'>
+                    <i class='fa fa-bars'></i>
+                    <span class='close-icon'>&times;</span>
+                </a>
+                <nav class='floating-nav js-floating-nav'>
+                    <ul class='list-unstyled'>
+                        <li>
+                            <a href='#about'>
+                                <i class='fa fa-user'></i>
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href='#projects'>
+                                <i class='fa fa-wrench'></i>
+                                Projects
+                            </a>
+                        </li>
+                        <li>
+                            <a href='#git-contributions'>
+                                <i class='fa fa-github'></i>
+                                GIT Contributions
+                            </a>
+                        </li>
+                        <li>
+                            <a href='#work-experience'>
+                                <i class='fa fa-building'></i>
+                                Work Experience
+                            </a>
+                        </li>
+                        <li>
+                            <a href='#skills'>
+                                <i class='fa fa-code'></i>
+                                Skills
+                            </a>
+                        </li>
+                        <li>
+                            <a href='#other-experience'>
+                                <i class='fa fa-briefcase'></i>
+                                Other Experience
+                            </a>
+                        </li>
+                        <li>
+                            <a href='#education'>
+                                <i class='fa fa-mortar-board'></i>
+                                Education
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href='#volunteer-work'>
+                                <i class='fa fa-child'></i>
+                                Volunteer Work
+                            </a>
+                        </li>
+                        <li>
+                            <a href='#interests'>
+                                <i class='fa fa-heart'></i>
+                                Interests
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <section class='col-md-3 card-wrapper profile-card-wrapper affix'>
+                    <div class = 'card profile-card'>
+                        <span class='profile-pic-container'>
+                            <div class='profile-pic'>
+                                <img class='media-object img-circle center-block' data-src='holder.js/100X100' alt='Angela Lo' src='assets/me.png' itemprop='image'>
+                            </div>
+                            <div class='name-and-profession'>
+                                <h3 class='text-center text-bolder name' itemprop='name'>Angela Lo</h3>
+                                <h5 class='text-muted text-center' itemprop='jobTitle'>Full Stack Engineer | Developer</h5>
+                            </div>
+                        </span>
+                        <hr>
+                        <div class='contact-details clearfix'>
+                            <div class='detail'>
+                                <span class='icon'>
+                                    <i class='fa fa-lg fa-location-arrow'></i>
+                                </span>
+                                <span class='info'>New York, NY</span>
+                            </div>
+                            <div class='detail'>
+                                <span class='icon'>
+                                    <i class='fa fa-lg fa-envelope'></i>
+                                </span>
+                                <span class="info">
+                                    <a class='link-disguise' href='mailto: loangelak@gmail.com' itemprop='email'><span class="__cf_email__" data-cfemail="d7bbbeb6b9b9f9a4a2b997b0bab6bebbf9b4b8ba">[Email&#160;Protected]</span></a>
+                                </span>
+                            </div>
+                            <div class='detail'>
+                                <span class='icon'>
+                                    <i class='fa fa-lg fa-folder-open'></i>
+                                </span>
+                                <span class='info'>
+                                    <a href='resumeGIT.pdf' class='link-disguise'>Resume</a>
+                                </span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class='social-links text-center'>
+                            <a class='fa fa-linkedin fa-2x social-link link-linkedin' href='https://www.linkedin.com/in/angela-l-a24a368/' target="_blank"></a>
+                            <a class='fa fa-github fa-2x social-link link-github' href='https://github.com/loangelak' target="_blank"></a>
+                            <a class='fa fa-twitter fa-2x social-link link-twitter' href='https://twitter.com' target="_blank"></a>
+                            <a class='fa fa-angellist fa-2x social-link link-angellist' href='https://angel.co/angela-lo-1?public_profile=1' target="_blank"></a>
+                        </div>
+                    </div>
+                </section>
+                <section class='col-md-9 card-wrapper pull-right'>
+                    <div class='card background-card'>
+                        <h4 class='text-uppercase text-bolder'>Background</h4>
+                        <hr>
+                        <div class='background-details'>
+                            <div class='detail' id='about'>
+                                <div class='icon'>
+                                    <i class='fa fa-lg fa-user'></i>
+                                    <span class='mobile-title'>About</span>
+                                </div>
+                                <div class='info'>
+                                    <h4 class='title text-uppercase'>About</h4>
+                                    <div class='content' itemprop='description'>
+                                        Hi! I&#x27;m Angela, a full stack developer. My degree offered me an extended career showcasing everything finance in my former life. Through making some pretty awesome spreadsheets and fancy formulas, I learned that coding was my passion and decided to pursue it full-time.  Numbers, readable code, well-written tests, and puppies tickle me pink. 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='detail' id='projects'>
+                                <div class='icon'>
+                                    <i class='fa fa-lg fa-wrench'></i>
+                                    <span class='mobile-title'>Projects</span>
+                                </div>
+                                <div class='info'>
+                                    <h4 class='title text-uppercase'>Projects</h4>
+                                    <ul class='list-unstyled'>
+                                        <li class='card card-nested clearfix'>
+                                            <div class='project-photo-container'>
+                                                <img src='assets/nycdirectleads.png' alt='pic' class='project-pic'>
+                                            </div>
+                                            <div class='content'>
+                                                <p class='clear-margin relative'><strong>NYC Direct Leads</strong>&nbsp;
+                                                    <a href='http://NYCDIRECTLEADS.COM' target="_blank">Live</a> <!--| 
+                                                    <!--<a href='#'>Github</a>-->
+                                                </p>
+                                                <p class='text-muted'>
+                                                    <small><span class='space-right'>HTML, CSS, JavaScript, Bootstrap, Python</span></small></p>
+                                                <p>Marketing platform for a real estate start-up. NYC Direct Leads is an NYC-based agency that provides real-time industry leads ready to be converted to qualified prospects. We produce the highest quality leads and get the greatest results.</p>
+                                            </div>
+                                        </li>
+                                        <li class='card card-nested clearfix'>
+                                            <div class='project-photo-container'>
+                                            <img src='assets/cragvan.png' alt='pic' class='project-pic'></div>
+                                            <div class='content'>
+                                                <p class='clear-margin relative'><strong>CragVan</strong>&nbsp;<!--<a href='#' target="_blank">Live</a> |--> <a href='https://github.com/loangelak/cragvan'>Github</a></p>
+                                                <p class='text-muted'><small><span class='space-right'>HTML, CSS, JavaScript, Bootstrap, PHP, MySQL</span></small></p>
+                                                <p>A climbing web application to help organize upcoming trips and events.  Written with PHP and connects to MySQL. </p>
+                                            </div>
+                                        </li>
+                                        <li class='card card-nested clearfix'>
+                                            <div class='project-photo-container'>
+                                            <img src='assets/ada.png' alt='pic' class='project-pic'>
+                                            </div>
+                                            <div class='content'>
+                                                <p class='clear-margin relative'><strong>Ada Nieves</strong>&nbsp;
+                                                <a href='https://github.com/loangelak/pet'>Github</a>
+                                                </p>
+                                                <p class='text-muted'><small><span class='space-right'>HTML, CSS, JavaScript, Bootstrap</span></small></p>
+                                                <p>Designed and engineered new platform for local pet business using Javascript and Bootstrap.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--GIT CONTRIBUTIONS-->
+                            <div class='detail' id='git-contributions'>
+                                <div class='icon'>
+                                    <i class='fa fa-lg fa-github'></i>
+                                    <span class='mobile-title'>GIT Contributions</span>
+                                </div>
+                                <div class='info'>
+                                    <h4 class='title text-uppercase'>GIT Contributions</h4>
+                                    <ul class='list-unstyled'>
+                                        <li class='card card-nested clearfix'>
+                                            <div class='project-photo-container'>
+                                                <img src='assets/cfsga.png' alt='pic' class='project-pic'>
+                                            </div>
+                                            <div class='content'>
+                                                <p class='clear-margin relative'><strong>Code For Social Good</strong>&nbsp;
+                                                    <a href='https://app.code4socialgood.org/' target="_blank">Live</a> | 
+                                                    <a href='https://github.com/loangelak/c4sg-web'>Github</a>
+                                                </p>
+                                                <p class='text-muted'>
+                                                    <small><span class='space-right'>HTML, CSS, Sass, Angular 4</span></small></p>
+                                                <p>Code for Social Good is a volunteer community that seeks to promote social welfare by supporting non profits in need.  Code for Social Good is made up of volunteers from across the tech industry.  Contributed directly to Code for Social Good's front end by updating, building and stylizing animated buttons and profile card page based on wireframe.  </p>
+                                            </div>
+                                        </li>
+                                        <li class='card card-nested clearfix'>
+                                            <div class='project-photo-container'>
+                                            <img src='assets/coderplexa.png' alt='pic' class='project-pic'></div>
+                                            <div class='content'>
+                                                <p class='clear-margin relative'><strong>Coderplex</strong>&nbsp;<a href='https://coderplex.org' target="_blank">Live</a> | <a href='https://github.com/loangelak/coderplex'>Github</a></p>
+                                                <p class='text-muted'><small><span class='space-right'>HTML, CSS, JavaScript, React.js, Bootstrap, PHP, MySQL</span></small></p>
+                                                <p>Coderplex's mission is to improve the state of tech across India.  Contributed to front end development by removing and updating footer information and links.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div><!--GIT CONTRIBUTIONS-->
+                            <div class='detail' id='work-experience'>
+                                <div class='icon'>
+                                    <i class='fa fa-lg fa-building'></i>
+                                    <span class='mobile-title'>Work Experience</span>
+                                </div>
+                                <div class='info'>
+                                    <h4 class='title text-uppercase'>Work Experience</h4>
+                                    <ul class='list-unstyled'>
+                                        <li class='card card-nested clearfix'>
+                                            <div class='content'>
+                                                <p class='clear-margin relative'><strong>Web Developer | Data Analytic</strong>&nbsp;
+                                                <a href='#' target="_blank">Consultant</a></p>
+                                                <p class='text-muted'><small><span class='space-right'>Oct 2014 - Present</span><span><i class='fa fa-clock-o icon-left'></i>4 years</span></small></p>
+                                                <ul>
+                                                    <li>Full Stack Web Developer| <a href='https://nycdirectleads.com'>NYC Direct Leads</a>: engineered new marketing platform for real estate startup.</li>
+                                                    <li> Freelance Writer: content creation for international Social Media start up in pet space.</li>
+                                                    <li>Front End Web Developer | Ada Nieves: engineered and designed new platform for local pet business.</li>
+                                                    <li>Data Analysis: provided analytics and migration services for a local private organization.</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class='card card-nested clearfix'>
+                                            <div class='content'>
+                                                <p class='clear-margin relative'><strong>Director | Senior Data Manager</strong>&nbsp;
+                                                <a href='https://americanorchestras.org/' target="_blank">League of American Orchestras</a>
+                                                </p>
+                                                <p class='text-muted'>
+                                                    <small>
+                                                        <span class='space-right'>Jun 2016 - Mar 2017</span>
+                                                        <span><i class='fa fa-clock-o icon-left'></i>10 months</span>
+                                                    </small></p>
+                                                <ul>
+                                                    <li>Lead analysis and functional specifications of ‘as-is’ and ‘to-be’ business models, executing complex operational, financial, and statistical analysis</li>
+                                                    <li>Performed analytics on relational dataset to identify root causes, trends and recommend priorities communicating findings to stakeholders and leadership team</li>
+                                                    <li>Conducted analysis to identify variances between system capabilities and business requirements.</li>
+                                                    <li>Consolidated various sources of risk management financial and clinical data to produce reports for internal and external use.</li>
+                                                    <li>Managed and analyzed data from a frequency and severity perspective for publication and external use including <a href='https://www.arts.gov/sites/default/files/Research-Art-Works-League.pdf'>‘Orchestra Facts 2006-2014’</a>.</li>
+                                                    <li>Managed all firm data vendor relationships and sourcing new datasets across LOB while supporting business growth</li>
+                                                    <li>Developed and executed architecture, policy, practices and procedures that properly managed data lifecycle</li>
+                                                    <li>Managed and executed system platform migration including data cleansing, QA and data migration</li>
+                                                    <li>Provided contextual intelligence across the solution stack. Improved data access consistently achieving service level targets. Automated and simplified operations.  Accommodated new initiatives without expanding infrastructure.  Facilitated alignment, consistency and governance. Defined business policies and standards. </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>            
+                            <div class='detail' id='skills'>
+                                <div class='icon'>
+                                    <i class='fa fa-lg fa-code'></i>
+                                    <span class='mobile-title'>Skills</span>
+                                </div>
+                                <div class='info'>
+                                    <h4 class='title text-uppercase'>Skills</h4>
+                                    <div class='content'>
+                                        <ul class='list-unstyled'>
+                                            <li class='card card-nested card-skills'>
+                                                <div class='skill-info'>
+                                                    <strong>Web Development</strong>
+                                                    <div class='space-top labels'>
+                                                        <span class='label label-keyword'>HTML</span>
+                                                        <span class='label label-keyword'>CSS</span>
+                                                        <span class='label label-keyword'>MySQL</span>
+                                                        <span class='label label-keyword'>PHP</span>
+                                                        <span class='label label-keyword'>Java</span>
+                                                        <span class='label label-keyword'>Wordpress</span>
+                                                        <span class='label label-keyword'>Git</span>
+                                                        <span class='label label-keyword'>Github</span>
+                                                        <span class='label label-keyword'>JavaScript</span>
+                                                        <span class='label label-keyword'>jQuery</span>
+                                                        <span class='label label-keyword'>BeautifulSoup</span>
+                                                        <span class='label label-keyword'>Angular.js</span>
+                                                        <span class='label label-keyword'>React.js</span>
+                                                        <span class='label label-keyword'>Sass</span>
+                                                        <span class='label label-keyword'>Python</span>
+                                                        <span class='label label-keyword'>Bottle</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class='card card-nested card-skills'>
+                                                <div class='skill-info'>
+                                                    <strong>Data Analysis</strong>
+                                                    <div class='space-top labels'>
+                                                        <span class='label label-keyword'>R</span>
+                                                        <span class='label label-keyword'>Excel</span>
+                                                        <span class='label label-keyword'>Python</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--BEGIN OTHER EXPERIENCE-->
+                            <div class='detail' id='other-experience'>
+                                <div class='icon'>
+                                    <i class='fa fa-lg fa-briefcase'></i>
+                                    <span class='mobile-title'>Other Experience</span>
+                                </div>
+                                <div class='info'>
+                                    <h4 class='title text-uppercase'>Other Experience</h4>
+                                    <ul class='list-unstyled'>
+                                        <li class='card card-nested clearfix'>
+                                            <div class='content'>
+                                                <p class='clear-margin relative'><strong>Vice President | Senior Portfolio Officer</strong>&nbsp;
+                                                <a href='https://bnymellon.com' target="_blank">BNY Mellon</a></p>
+                                                <p class='text-muted'><small><span class='space-right'>Jun 2008 - Oct 2014</span><span><i class='fa fa-clock-o icon-left'></i>6 years 4 months</span></small></p>
+                                                <ul>
+                                                    <li>Managed over $500 Million in individual and corporate accounts. </li>
+                                                    <li> Performed risk analysis for potential clients using financial statements, earnings calls, conversations with CEOs and CFOs, and trade receivable reports. </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class='card card-nested clearfix'>
+                                            <div class='content'>
+                                                <p class='clear-margin relative'><strong>Vice President | Senior Fiduciary Officer</strong>&nbsp;
+                                                <a href='https://citi.com' target="_blank">Citibank</a>
+                                                </p>
+                                                <p class='text-muted'>
+                                                    <small>
+                                                        <span class='space-right'>Jun 2005 - Jun 2008</span>
+                                                        <span><i class='fa fa-clock-o icon-left'></i>3 years</span>
+                                                    </small></p>
+                                                <ul>
+                                                    <li>Served on senior management committees that monitored and reviewed asset allocation and determined discretionary actions under governing document.</li>
+                                                    <li>Managed internal and external audits consistent with policies and procedures to attain top rating from regulators.</li>
+                                                    <li>Conducted development of the remediation of product risk management procedures and processes as part of client service improvment initiative.</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class='card card-nested clearfix'>
+                                            <div class='content'>
+                                                <p class='clear-margin relative'><strong>Vice President | Senior Fiduciary Officer</strong>&nbsp;
+                                                <a href='https://db.com/usa/' target="_blank">Deutsche Bank</a>
+                                                </p>
+                                                <p class='text-muted'>
+                                                    <small>
+                                                        <span class='space-right'>Jun 1999 - Jun 2005</span>
+                                                        <span><i class='fa fa-clock-o icon-left'></i>6 years</span>
+                                                    </small></p>
+                                                <ul>
+                                                    <li>Conducted complex analysis to identify and place controls for high risk accounts.</li>
+                                                    <li>Executed due diligence and reference checks to complete AML, BSA, and KYC process.</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div><!--END OTHER EXPERIENCE-->
+                            <div class='details' id='education'>
+                                <div class='icon'>
+                                    <i class='fa fa-lg fa-mortar-board'></i>
+                                    <span class='mobile-title'>Education</span>
+                                </div>
+                                <div class='info'>
+                                    <h4 class='title text-uppercase'>Education</h4>
+                                    <div class='content'>
+                                        <ul class='list-unstyled'>
+                                            <li class='card card-nested'>
+                                                <div class='content'>
+                                                    <p class='clear-margin relative'><strong>Hunter College</strong></p>
+                                                    <p class='text-muted'><small>Oct 2017 - Jun 2018</small></p>
+                                                    <p>Full Stack Web Development Certification</p>
+                                                </div>
+                                            </li>
+                                            <li class='card card-nested'>
+                                                <div class='content'>
+                                                    <p class='clear-margin relative'><strong>New York University</strong></p>
+                                                    <!--<p class='text-muted'><small></small></p>-->
+                                                    <p>Certificate in Financial Planning</p>
+                                                </div>
+                                            </li>
+                                            <li class='card card-nested'>
+                                                <div class='content'>
+                                                    <p class='clear-margin relative'><strong>American Banker's Association National Trust School</strong></p>
+                                                    <!--<p class='text-muted'><small></small></p>-->
+                                                    <p>Certificate in Trust Administration</p>
+                                                </div>
+                                            </li>
+                                            <li class='card card-nested'>
+                                                <div class='content'>
+                                                    <p class='clear-margin relative'>
+                                                        <strong>MBA in Banking &amp; Finance</strong><br>
+                                                    Dowling Collge
+                                                    </p>
+                                                    <!--
+                                                    <p class='text-muted'><small></small></p>
+                                                    <p></p>-->
+                                                </div>
+                                            </li>
+                                            <li class='card card-nested'>
+                                                <div class='content'>
+                                                    <p class='clear-margin relative'>
+                                                        <strong>BA in Business Management &amp; International Studies</strong><br>
+                                                    SUNY | Brockport College
+                                                    </p>
+                                                    <!--
+                                                    <p class='text-muted'><small></small></p>
+                                                    <p></p>-->
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='detail' id='volunteer-work'>
+                                <div class='icon'>
+                                    <i class='fa fa-lg fa-child'></i>
+                                    <span class='mobile-title'>Volunteer</span>
+                                </div>
+                                <div class='info'>
+                                    <h4 class='title text-uppercase'>Volunteer Work</h4>
+                                    <div class='content'>
+                                        <ul class='list-unstyled'>
+                                            <li class='card card-nested'>
+                                                <div class='content'>
+                                                    <p class='clear-margin relative'>
+                                                        <i class='fa fa-circle current-event' rel='tooltip' title='Currently Volunteering' data-placement='left'></i>
+                                                        <strong>Lead Instructor</strong>,&nbsp;
+                                                        <a href='https://scripted.org/' target="_blank">ScriptEd</a>
+                                                    </p>
+                                                    <p class='text-muted'><small>Nov 2017 - Present</small></p>
+                                                    <p>ScriptEd equips students in under-resourced schools with the fundamental coding skills and professional experiences that together create access to careers in technology.</p>
+                                                    <ul>
+                                                        <li> Teach HTML, CSS and JavaScript to high school students in East Harlem, NY </li>
+                                                        <li>Work one-on-one with students to develop their fundamental coding skills and inspire them to pursue careers in tech.</li>
+
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class='card card-nested'>
+                                                <div class='content'>
+                                                    <p class='clear-margin relative'>
+                                                        <i class='fa fa-circle current-event' rel='tooltip' title='Currently Volunteering' data-placement='left'></i>
+                                                        <strong>Adoption Processor</strong>,&nbsp;
+                                                        <a href='https://www.rdrne.org/' target="_blank">Ruff Dog Rescue NE</a>
+                                                    </p>
+                                                    <!--<p class='text-muted'><small>Nov 2017 - Present</small></p>-->
+                                                    <p>Ruff Dog Rescue NE is a non profit facility &amp; foster based rescue headquartered in Pennsylvania with adoption services througout the north east.</p>
+                                                </div>
+                                            </li>
+                                            <li class='card card-nested'>
+                                                <div class='content'>
+                                                    <p class='clear-margin relative'>
+                                                        <i class='fa fa-circle current-event' rel='tooltip' title='Currently Volunteering' data-placement='left'></i>
+                                                        <strong>Rescue Coordinator</strong>,&nbsp;
+                                                        <a href='http://www.almosthomerescue.org/' target="_blank">Almost Home Daschund Rescue - AHDRS</a>
+                                                    </p>
+                                                    <!--<p class='text-muted'><small>Nov 2017 - Present</small></p>-->
+                                                    <p>Almost Home Daschund Rescue Society is a network of independent rescue volunteers who work together to rescue abandoned, abused, and/or unwanted daschunds. AHDRS provides medical and behavioral care prior to placing them in appropriate homes.</p>
+                                                </div>
+                                            </li>
+                                            <li class='card card-nested'>
+                                                <div class='content'>
+                                                    <p class='clear-margin relative'>
+                                                        <i class='fa fa-circle current-event' rel='tooltip' title='Currently Volunteering' data-placement='left'></i>
+                                                        <strong>Photographer</strong>,&nbsp;
+                                                        <a href='https://amaanimalrescue.org/' target="_blank">AMA Animal Rescue</a>
+                                                    </p>
+                                                    <!--<p class='text-muted'><small>Nov 2017 - Present</small></p>-->
+                                                    <p>Angels for Mistreated Animals (AMA) is a foster based animal rescue organization founded in Brooklyn, NY.  It's mission is to safeguard animals who have experienced the most severe cases of abuse, neglect, and abandonment.</p>
+                                                </div>
+                                            </li>
+                                            <li class='card card-nested'>
+                                                <div class='content'>
+                                                    <p class='clear-margin relative'>
+                                                        <i class='fa fa-circle current-event' rel='tooltip' title='Currently Volunteering' data-placement='left'></i>
+                                                        <strong>Lost &amp; Found Coordinator</strong>,&nbsp;
+                                                        <a href='https://www.aspca.org/' target="_blank">ASPCA</a>
+                                                    </p>
+                                                    <p>The ASPCA's mission is to provide effective means for the prevention of cruelty to animals throughout the United States.</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='detail' id='interests'>
+                                <div class='icon'>
+                                    <i class='fa fa-lg fa-heart'></i>
+                                    <span class='mobile-title'>Interests</span>
+                                </div>
+                                <div class='info'>
+                                    <h4 class='title text-uppercase'>Interests</h4>
+                                    <div class='content'>
+                                        <ul class='list-unstyled'>
+                                            <li class='card card-nested'>
+                                                <p>Climbing, Running, Coding &amp; Rescuing Animals
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/tooltip.js"></script>
+        <script type="text/javascript">
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l=document.getElementsByTagName("a"),t=document.createElement("textarea");for(i=0;l.length-i;i++){try{a=l[i].getAttribute("href");if(a&&a.indexOf("/cdn-cgi/l/email-protection") > -1  && (a.length > 28)){s='';j=27+ 1 + a.indexOf("/cdn-cgi/l/email-protection");if (a.length > j) {r=parseInt(a.substr(j,2),16);for(j+=2;a.length>j&&a.substr(j,1)!='X';j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}j+=1;s+=a.substr(j,a.length-j);}t.innerHTML=s.replace(/</g,"&lt;").replace(/>/g,"&gt;");l[i].setAttribute("href","mailto:"+t.value);}}catch(e){}}}catch(e){}})();
+/* ]]> */
+
+        
+    </body>
+</html>
